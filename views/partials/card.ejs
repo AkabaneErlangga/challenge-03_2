@@ -2,15 +2,15 @@
     <div class="card">
         <img src="images/Car.png" class="card-img-top" alt="...">
         <div class="card-body">
-            <h6 class="card-title">Nama/tipe mobil</h6>
-            <h6 class="card-title">Rp. 430.000 / hari</h6>
+            <h6 class="card-title"><%= car.name %> </h6>
+            <h6 class="card-title">Rp. <%= car.price %>  / hari</h6>
             <p class="card-text">
                 <i class="fa-solid fa-key"></i>
-                Start rent - Finish rent
+                <%= car.startRent %>  - <%= car.finishRent %> 
             </p>
             <p class="card-text">
                 <i class="fa-regular fa-clock"></i>
-                Updated at 4 Apr 2022, 09.00
+                Updated at <%= car.updatedAt %> , 09.00
             </p>
             <div class="row">
                 <div class="col-6">

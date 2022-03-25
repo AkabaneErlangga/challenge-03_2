@@ -8,4 +8,3 @@ sidebarButton.onclick = () => {
     content.classList.toggle("active");
     navbar.classList.toggle("active");
 }
-

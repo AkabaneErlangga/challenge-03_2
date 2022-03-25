@@ -5,7 +5,7 @@
 	<div class="row">
 		<div id="content" class="min-vh-100">
 			<ol class="breadcrumb">
-				<li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+				<li class="breadcrumb-item active font-weight-bold" aria-current="page">Dashboard</li>
 				<li class="breadcrumb-item active" aria-current="page">Dashboard</li>
 			</ol>
 			<div class="main-1">
@@ -24,87 +24,9 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>User Mail</td>
-							<td>Car</td>
-							<td>Start Rent</td>
-							<td>Finish Rent</td>
-							<td>Price</td>
-							<td>Status</td>
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>User Mail</td>
-							<td>Car</td>
-							<td>Start Rent</td>
-							<td>Finish Rent</td>
-							<td>Price</td>
-							<td>Status</td>
-						</tr>
-						<tr>
-							<th scope="row">3</th>
-							<td>User Mail</td>
-							<td>Car</td>
-							<td>Start Rent</td>
-							<td>Finish Rent</td>
-							<td>Price</td>
-							<td>Status</td>
-						</tr>
-						<tr>
-							<th scope="row">4</th>
-							<td>User Mail</td>
-							<td>Car</td>
-							<td>Start Rent</td>
-							<td>Finish Rent</td>
-							<td>Price</td>
-							<td>Status</td>
-						</tr>
-						<tr>
-							<th scope="row">5</th>
-							<td>User Mail</td>
-							<td>Car</td>
-							<td>Start Rent</td>
-							<td>Finish Rent</td>
-							<td>Price</td>
-							<td>Status</td>
-						</tr>
-						<tr>
-							<th scope="row">6</th>
-							<td>User Mail</td>
-							<td>Car</td>
-							<td>Start Rent</td>
-							<td>Finish Rent</td>
-							<td>Price</td>
-							<td>Status</td>
-						</tr>
-						<tr>
-							<th scope="row">7</th>
-							<td>User Mail</td>
-							<td>Car</td>
-							<td>Start Rent</td>
-							<td>Finish Rent</td>
-							<td>Price</td>
-							<td>Status</td>
-						</tr>
-						<tr>
-							<th scope="row">8</th>
-							<td>User Mail</td>
-							<td>Car</td>
-							<td>Start Rent</td>
-							<td>Finish Rent</td>
-							<td>Price</td>
-							<td>Status</td>
-						</tr>
-						<tr>
-							<th scope="row">9</th>
-							<td>User Mail</td>
-							<td>Car</td>
-							<td>Start Rent</td>
-							<td>Finish Rent</td>
-							<td>Price</td>
-							<td>Status</td>
-						</tr>
+						<% for( let i = 0; i < orders.length; i++ ) { %>
+							<%- include("../partials/tableOrder", {order: orders[i], number: i+1})  %> 						
+						<% } %>
 					</tbody>
 				</table>
 				<div class="row">
@@ -173,56 +95,9 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>Name</td>
-							<td>Category</td>
-							<td>Price</td>
-							<td>Start Rent</td>
-							<td>Finish Rent</td>
-							<td>Created at</td>
-							<td>Updated at</td>
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>Name</td>
-							<td>Category</td>
-							<td>Price</td>
-							<td>Start Rent</td>
-							<td>Finish Rent</td>
-							<td>Created at</td>
-							<td>Updated at</td>
-						</tr>
-						<tr>
-							<th scope="row">3</th>
-							<td>Name</td>
-							<td>Category</td>
-							<td>Price</td>
-							<td>Start Rent</td>
-							<td>Finish Rent</td>
-							<td>Created at</td>
-							<td>Updated at</td>
-						</tr>
-						<tr>
-							<th scope="row">4</th>
-							<td>Name</td>
-							<td>Category</td>
-							<td>Price</td>
-							<td>Start Rent</td>
-							<td>Finish Rent</td>
-							<td>Created at</td>
-							<td>Updated at</td>
-						</tr>
-						<tr>
-							<th scope="row">5</th>
-							<td>Name</td>
-							<td>Category</td>
-							<td>Price</td>
-							<td>Start Rent</td>
-							<td>Finish Rent</td>
-							<td>Created at</td>
-							<td>Updated at</td>
-						</tr>
+						<% for( let i = 0; i < cars.length; i++ ) { %>
+							<%- include("../partials/tableCar", {car: cars[i], number: i+1})  %> 						
+						<% } %>
 					</tbody>
 				</table>
 				<div class="row">

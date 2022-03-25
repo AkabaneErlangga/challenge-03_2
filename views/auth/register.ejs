@@ -1,0 +1,38 @@
+<body>
+    <section class="form h-100">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="img-left col-lg-8"></div>
+                <div class="align-self-center col-lg-4">
+                    <form action="/auth/register" method="post" class="col-lg-11">
+                        <h3 class="mb-5">Welcome, Admin BCR</h3>
+                        <% if (messages.error) { %>
+                        <div class="alert alert-danger" role="alert">
+                            <%= messages.error %>
+                        </div>
+                        <% } %>
+                        <div class="form-row my-2">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="email" id="email"
+                                placeholder="Contoh: johndee@gmail.com">
+                        </div>
+                        <div class="form-row my-2">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" name="password" id="password"
+                                placeholder="6+ karakter">
+                        </div>
+                        <div class="form-row my-2">
+                            <label for="password">Konfiramsi Password</label>
+                            <input type="password" class="form-control" name="password2" id="password"
+                                placeholder="6+ karakter">
+                        </div>
+                        <div class="form-row my-3">
+                            <button type="submit" class="login-btn">Register</button>
+                        </div>
+                        <p>Sudah punya akun? <a href="/auth/login">Log in</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>

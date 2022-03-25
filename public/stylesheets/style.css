@@ -49,6 +49,7 @@ a:hover{
 nav #sidebar-btn {
   color: black;
   font-size: 20px;
+  cursor: pointer;
 }
 
 nav .search-btn {
@@ -95,7 +96,7 @@ nav .search-btn:hover {
   height: 60px;
 }
 
-.sidebar ul li a {
+.sidebar ul li{
   color: white;
 }
 
